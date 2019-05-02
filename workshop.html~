@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="author" content="Adam Jardine">
+  <title>Rutgers Computational Linguistics Lab</title>
+  <style type="text/css">code{white-space: pre;}</style>
+  <!--[if lt IE 9]>
+    <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+  <link rel="stylesheet" href="style.css">
+  <meta name="description" content="Rutgers Computational Linguistics Lab">
+  <meta name="keywords" content="linguistics,Rutgers,phonology,computational linguistics">
+  <link href='https://fonts.googleapis.com/css?family=Volkhov' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Noticia+Text:400,700' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+</head>
+
+<body>
+
+<div style="margin-left:12%">
+
+<h1 id="rucll">Rutgers Computational Linguistics Lab</h1>
+
+<p class="contact">
+  Rm 412</br>
+  1 Spring St, New Brunswick, NJ</br>
+</p></br>
+
+<p> Page and lab under construction! </p>
+
+<table width="70%">
+  <tr>
+    <td>
+      <p><b>Director:</b>
+    </td>
+    <td>
+      <a href="http://rci.rutgers.edu/~aj591">Adam Jardine</a> (Dept. of Linguistics)  </p>
+    </td>
+    <td>
+      <b>Students:</b>
+    </td>
+    <td>
+	<ul>
+	  <li>Dine Mamadou</li>
+	  <li>Nathan Koser</li>
+	  <li>Christopher Oakden</li>
+	  <li>Eileen Blum</li>
+	  <li>Yu Cao</li>
+	</ul>
+    </td>
+  </tr>
+</table>
+
+
+
+
+<!--<a href="mailto:adam.jardine@rutgers.edu">adam.jardine@rutgers.edu</a></p>
+</div>
+
+
+<ul class="nav">
+  <li><a href="index.html">Home</a></li>
+  <li><a href="papers.html">Papers</a></li>
+  <li><a href="presentations.html">Presentations</a></li>
+  <li><a href="teaching.html">Teaching</a></li>
+  <li><a href="files/cv.pdf">CV (pdf)</a></li>
+</ul>
+
+<div style="margin-left:20%;padding:1px 16px;">
+
+  
+  <p> <img src="files/me.jpg" alt="Mug shot" style="float:right;height:170px;">
+ 
+    I'm an Assistant Professor of phonology at the Rutgers <a href="https://ling.rutgers.edu">Department of Linguistics</a>.</p>
+
+  
+</div>
+
+<br/>
+-->
+<p class="footer">
+Last updated: Oct 11 2018<br>
+</p>
+</body>
+</html>
