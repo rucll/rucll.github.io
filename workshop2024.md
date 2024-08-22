@@ -29,7 +29,7 @@ permalink: /workshop2024/
 <h1 id="rucll"> 2024 Rutgers Computational Phonology Workshop</h1>
 
 <p class="contact">
-  Hosted by the <a href="https://adamjardine.github.io/rucll/">Rutgers Computational Linguistics Lab</a></br>
+  Hosted by the <a href="https://rucll.github.io/">Rutgers Computational Linguistics Lab</a></br>
 </p></br>
 
 <h3>Schedule</h3>
@@ -37,31 +37,30 @@ permalink: /workshop2024/
 <ul>
   <li>
     September 27th, 2024:<br/>
-    1pm - 5pm, Rm 203, <a href="https://goo.gl/maps/SBi1FVxsc292">One Spring St</a>
+    1pm - 5pm, Rm xxx, <a href="https://goo.gl/maps/7Q8RMg5b4dC2">Rutgers Academic Building</a> (Seminary Pl, across from the Ling Dept.) 
   </li>
 
   <br/>
   
   <li>
-    October 26th, 2018:<br/>
-    10am - 3pm, Rm 403, <a href="https://goo.gl/maps/SBi1FVxsc292">One Spring St</a>
+    September 28th, 2024:<br/>
+    10am - 3pm, Rm , <a href="https://goo.gl/maps/SBi1FVxsc292">One Spring St</a>
 	<ul>
 	  <li>
 	    10am  - 11:30am Math ling/PhonX group meeting, led by Kevin McMullin</br>
 	  </li>
 	</ul>
-	3 - 5pm, Rm 108, <a href="https://goo.gl/maps/o4fQXN7utz72">18 Seminary Pl</a> (Linguistics Department)
+	3 - 5pm, Rm xxx, <a href="https://goo.gl/maps/7Q8RMg5b4dC2">Rutgers Academic Building</a> (Seminary Pl, across from the Ling Dept.) 
 	<ul>
 	  <li>
-	    Colloquium talk by Kevin McMullin
 	  </li>
 	</ul>
   </li>
 
   <br/>
 
-  <li>October 27th, 2018</br>
-    9am - 3pm, Rm 2100, <a href="https://goo.gl/maps/7Q8RMg5b4dC2">Rutgers Academic Building</a> (Seminary Pl, across from the Ling Dept.) 
+  <li>September 29th, 2024</br>
+    9am - 3pm, Rm xxx, <a href="https://goo.gl/maps/7Q8RMg5b4dC2">Rutgers Academic Building</a> (Seminary Pl, across from the Ling Dept.) 
 </ul>
 
 <h3>Parking</h3>
@@ -90,7 +89,7 @@ permalink: /workshop2024/
 <br/>
 -->
 <p class="footer">
-Last updated: Oct 15 2018<br>
+Last updated: Aug 22 2024<br>
 </p>
 </body>
 </html>
