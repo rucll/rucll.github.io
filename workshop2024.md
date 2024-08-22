@@ -8,25 +8,33 @@ permalink: /workshop2024/
 <head>
   <meta charset="utf-8">
   <meta name="author" content="Adam Jardine">
-  <titleT2024 Rutgers Computational Phonology Workshop</title>
+  <title>Rutgers MathLing Group </title>
   <style type="text/css">code{white-space: pre;}</style>
   <!--[if lt IE 9]>
     <script src="https://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
-  <link rel="stylesheet" href="style.css">
-  <meta name="description" content="Rutgers Computational Linguistics Lab">
-  <meta name="keywords" content="linguistics,Rutgers,phonology,computational linguistics">
-  <link href='https://fonts.googleapis.com/css?family=Volkhov' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="../style.css">
+  <meta name="description" content="Rutgers Mathling Group">
+  <meta name="keywords" content="linguistics,Rutgers,phonology,syntax,semantics,mathematical linguistics,computational linguistics">
   <link href='https://fonts.googleapis.com/css?family=Lato:300,400' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Noticia+Text:400,700' rel='stylesheet' type='text/css'>
-  <link href='https://fonts.googleapis.com/css?family=Arimo:400,700' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css?family=Raleway:800&display=swap" rel="stylesheet"> 
+	
+<style>	
+a:link, a:visited, a:active {
+  	color: #B82814;
+  	text-decoration: none;
+  	display: inline-block; 
+}
+a:hover {
+	color: #E5260C;
+}
+</style>
 </head>
 
-<body>
+<body style="margin: 3% 25% 5% 15%">
+<!-- <img style="width:660px;height:200px" src="lab.jpg"> -->
 
-<div style="margin-left:12%">
-
-<h1 id="rucll"> 2024 Rutgers Computational Phonology Workshop</h1>
+<h1 id="rucll">2024 Rutgers Computational Phonology Workshop</h1>
 
 <p class="contact">
   Hosted by the <a href="https://rucll.github.io/">Rutgers Computational Linguistics Lab</a></br>
