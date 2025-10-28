@@ -263,11 +263,134 @@ Building West</a> (the one on the left looking from Seminary Pl), Rm
 </div>
 <div id="schedule" class="section level3">
 <h3>Schedule</h3>
-<p>Day 1 (Friday, Nov 14) 01:30 PM - 05:15 PM<br> Day 2 (Saturday, Nov
-15) 09:00 AM to 05:15 PM<br> Day 3 (Sunday, Nov 16) 09:00 AM to 12:15
-PM<br></p>
-<hr />
-<p><b>More detailed information will be announced later.</b></p>
+<br>
+
+<style>
+  .tabs {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1em;
+    font-size: 1.2em;
+    color: #f7f7f7;
+    gap: 1em;
+  }
+  .tab-button {
+    background-color: #777;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6px;
+    flex: 1 1 0;
+    display: inline-block;
+  }
+  .tab-button.active {
+    background-color: #B3002D;
+  }
+  .tab-content {
+    display: none;
+    animation: fade 0.3s ease-in-out;
+  }
+  .tab-content.active {
+    display: block;
+  }
+  @keyframes fade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    padding: 6px;
+    text-align: left;
+  }
+  th[colspan] {
+    background-color: #B3002D;
+    font-size: 1.2em;
+  }
+</style>
+
+
+<div class="tabs">
+  <button class="tab-button active" onclick="openDay('day1', this)">Day 1 (Friday, Nov 14)</button>
+  <button class="tab-button" onclick="openDay('day2', this)">Day 2 (Saturday, Nov 15)</button>
+  <button class="tab-button" onclick="openDay('day3', this)">Day 3 (Sunday, Nov 16)</button>
+</div>
+
+<!-- Day 1 -->
+<div id="day1" class="tab-content active">
+  <table>
+    <tr style="color: #f7f7f7"><th colspan="2">afternoon</th><th colspan="1"><i>theme: software</i></th></tr>
+    <tr><th style="border-bottom: 1px solid #ccc;">Time</th><th style="border-bottom: 1px solid #ccc;">Speaker</th><th style="border-bottom: 1px solid #ccc;">Title</th></tr>
+    <tr><td>01:30 PM – 01:40 PM</td><td colspan="2" style="text-align:center;"><b><i>opening remarks</i></b></td></tr>
+    <tr><td>01:40 PM – 02:00 PM</td><td>Matthew Hayden (Stony Brook)</td><td></td></tr>
+    <tr><td>02:00 PM – 02:20 PM</td><td>Abed Qaddoumi (Stony Brook)</td><td><i>BUFIA + PLEBBY Arabic stress; plus pipeline software</i></td></tr>
+    <tr style="border-bottom: 1px solid #ccc;"><td>02:20 PM – 02:30 PM</td><td colspan="2" style="text-align:center;"><b><i>break</i></b></td></tr>
+    <tr><td>02:30 PM – 03:15 PM</td><td>Neha Jeyaram & Manish Kandepalli (Rutgers)</td><td><i>implementations of SI2DLA</i></td></tr>
+    <tr><td>03:15 PM – 04:00 PM</td><td>Jacob Rowen (Stony Brook)</td><td><i>MSO transductions software tutorial</i></td></tr>
+    <tr style="border-bottom: 1px solid #ccc;"><td>04:00 PM – 04:15 PM</td><td colspan="2" style="text-align:center;"><b><i>break</i></b></td></tr>
+    <tr><td>04:15 PM – 05:15 PM</td><td>Jeff Heinz (Stony Brook)</td><td><i>evaluating learned morpho-phon grammars (Lex, Morph, Phon)</i></td></tr>
+    <tr style="border-bottom: 1px solid #ccc;"><td>05:15 PM</td><td colspan="2" style="text-align:center;"><b><i>dinner</i></b></td></tr>
+  </table>
+</div>
+
+<!-- Day 2 -->
+<div id="day2" class="tab-content">
+  <table>
+    <tr style="color: #f7f7f7"><th colspan="2">morning</th><th colspan="1"><i>theme: linguistic analysis</i></th></tr>
+    <tr><th style="border-bottom: 1px solid #ccc;">Time</th><th style="border-bottom: 1px solid #ccc;">Speaker</th><th style="border-bottom: 1px solid #ccc;">Title</th></tr>
+    <tr><td>09:00 AM – 09:20 AM</td><td>Elizabeth Garza (?)</td><td></td></tr>
+    <tr><td>09:20 AM – 09:40 AM</td><td>Olanrewaju Samuel (Stony Brook)</td><td><i>Yagba nasal and ATR harmony</i></td></tr>
+    <tr style="border-bottom: 1px solid #ccc;"><td>09:40 AM – 09:50 AM</td><td colspan="2" style="text-align:center;"><b><i>break</i></b></td></tr>
+    <tr><td>09:50 AM – 10:10 AM</td><td>Geonhee Lee (Stony Brook)</td><td><i>maybe nanti</i></td></tr>
+    <tr><td>10:10 AM – 10:30 AM</td><td>Michael Hayes (Michigan)</td><td><i>meter</i></td></tr>
+    <tr style="border-bottom: 1px solid #ccc;"><td>10:30 AM – 10:40 AM</td><td colspan="2" style="text-align:center;"><b><i>break</i></b></td></tr>
+    <tr><td>10:40 AM – 11:00 AM</td><td>Hyunjung Joo (Rutgers)</td><td><i>phonetics/phonology interaction in intonation</i></td></tr>
+    <tr><td>11:00 AM – 11:20 AM</td><td>Anton Hampe (Yale)</td><td><i>word equations</i></td></tr>
+    <tr><td>11:20 AM – 01:15 PM</td><td colspan="2" style="text-align:center;"><b><i>lunch</i></b></td></tr>
+    <tr style="color: #f7f7f7"><th colspan="2">afternoon</th><th colspan="1"><i>theme: linguistic algorithm</i></th></tr>
+    <tr><th style="border-bottom: 1px solid #ccc;">Time</th><th style="border-bottom: 1px solid #ccc;">Speaker</th><th style="border-bottom: 1px solid #ccc;">Title</th></tr>
+    <tr><td>01:15 PM – 01:45 PM</td><td>Magdalena Markowska (Stony Brook)</td><td><i>learning processes from small data with features</i></td></tr>
+    <tr><td>01:45 PM – 02:15 PM</td><td>Han Li (Stony Brook)</td><td><i>BUFIA for tone</i></td></tr>
+    <tr style="border-bottom: 1px solid #ccc;"><td>02:15 PM – 02:30 PM</td><td colspan="2" style="text-align:center;"><b><i>break</i></b></td></tr>
+    <tr><td>02:30 PM – 03:00 PM</td><td>Chenli Wang (Rutgers)</td><td><i>learning phonological interactions</i></td></tr>
+    <tr><td>03:00 PM – 03:30 PM</td><td>Ben Evans (Stony Brook)</td><td><i>decomposition</i></td></tr>
+    <tr style="border-bottom: 1px solid #ccc;"><td>03:30 PM – 03:45 PM</td><td colspan="2" style="text-align:center;"><b><i>break</i></b></td></tr>
+    <tr><td>03:45 PM – 04:15 PM</td><td>Daniar (NYU)</td><td><i>learning underspecified forms in LP</i></td></tr>
+    <tr><td>04:15 PM – 04:45 PM</td><td>Sarah Payne (Stony Brook)</td><td></td></tr>
+    <tr style="border-bottom: 1px solid #ccc;"><td>04:45 PM – 05:00 PM</td><td colspan="2" style="text-align:center;"><b><i>break</i></b></td></tr>
+    <tr><td>05:00 PM – 06:00 PM</td><td>Kyle Gorman (CUNY)</td><td><i>Invited Talk</i></td></tr>
+    <tr style="border-bottom: 1px solid #ccc;"><td>06:30 PM</td><td colspan="2" style="text-align:center;"><b><i>dinner</i></b></td></tr>
+  </table>
+</div>
+
+<!-- Day 3 -->
+<div id="day3" class="tab-content">
+  <table>
+    <tr style="color: #f7f7f7"><th colspan="2">morning</th><th colspan="1"><i>theme: syntax/semantics</i></th></tr>
+    <tr><th style="border-bottom: 1px solid #ccc;">Time</th><th style="border-bottom: 1px solid #ccc;">Speaker</th><th style="border-bottom: 1px solid #ccc;">Title</th></tr>
+    <tr><td>09:15 AM – 09:45 AM</td><td>Paul Petroski (Rutgers)</td><td><i>restricted logic</i></td></tr>
+    <tr><td>09:45 AM – 10:15 AM</td><td>M Love (Stony Brook)</td><td><i>semantic objects</i></td></tr>
+    <tr style="border-bottom: 1px solid #ccc;"><td>10:15 AM – 10:30 AM</td><td colspan="2" style="text-align:center;"><b><i>break</i></b></td></tr>
+    <tr><td>10:30 AM – 11:00 AM</td><td>Logan Swanson (Stony Brook)</td><td><i>MTSL2 over trees/strings</i></td></tr>
+    <tr><td>11:00 AM – 11:30 AM</td><td>Vincent Czarnecki (Rutgers)</td><td><i>syntax-phonology interface</i></td></tr>
+    <tr style="border-bottom: 1px solid #ccc;"><td>11:30 AM – 11:45 AM</td><td colspan="2" style="text-align:center;"><b><i>closing remarks</i></b></td></tr>
+  </table>
+</div>
+
+<script>
+  function openDay(dayId, btn) {
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+    document.getElementById(dayId).classList.add('active');
+    document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+</script>
+       
 <script>
 document.addEventListener("scroll", () => {
   document.querySelectorAll('.reveal').forEach(el => {
