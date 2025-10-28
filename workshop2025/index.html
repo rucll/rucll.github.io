@@ -308,6 +308,20 @@ Building West</a> (the one on the left looking from Seminary Pl), Rm
     padding: 6px;
     text-align: left;
   }
+th:nth-child(1),
+td:nth-child(1) {
+  width: 18%;            /* Time column */
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 35%;            /* Speaker column */
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 47%;            /* Title column */
+  word-wrap: break-word; /* wraps long titles nicely */
   th[colspan] {
     background-color: #B3002D;
     font-size: 1.2em;
