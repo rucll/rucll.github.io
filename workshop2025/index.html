@@ -249,8 +249,19 @@ Grant #2416184</a> <br><br><br><br></p></h4>
 
 
 <div style="text-align: right;">
-<p><span style="color:grey"><i>last update</i>: 10/05/2025 19:34:57
-EDT</span></p>
+<p><span style="color:grey"><i>last update</i>: <span id="last-update"></span></i></span></p>
+
+<script>
+  const now = new Date();
+  const options = { 
+    year: 'numeric', month: '2-digit', day: '2-digit', 
+    hour: '2-digit', minute: '2-digit', second: '2-digit',
+    timeZoneName: 'short' 
+  };
+  document.getElementById('last-update').textContent =
+    now.toLocaleString('en-US', options);
+</script>
+       
 </div>
 <hr />
 <div id="date-and-location" class="section level3">
@@ -375,7 +386,7 @@ td:nth-child(3) {
     <tr><td>01:15 PM – 01:45 PM</td><td>Magdalena Markowska (Stony Brook)</td><td><i></i></td></tr>
     <tr><td>01:45 PM – 02:15 PM</td><td>Han Li (Stony Brook)</td><td><i>Comparing Representations for Tonotactic Learning</i></td></tr>
     <tr style="border-bottom: 1px solid #ccc;"><td>02:15 PM – 02:30 PM</td><td colspan="2" style="text-align:center;"><b><i>break</i></b></td></tr>
-    <tr><td>02:30 PM – 03:00 PM</td><td>Chenli Wang (Rutgers)</td><td><i></i></td></tr>
+    <tr><td>02:30 PM – 03:00 PM</td><td>Chenli Wang (Rutgers)</td><td><i>Learning Interacting Simplex ISL<sub>2</sub></i></td></tr>
     <tr><td>03:00 PM – 03:30 PM</td><td>Benjamin Evans (Stony Brook)</td><td><i>Learning the Decomposition of Homomorphisms and Simplex Functio</i></td></tr>
     <tr style="border-bottom: 1px solid #ccc;"><td>03:30 PM – 03:45 PM</td><td colspan="2" style="text-align:center;"><b><i>break</i></b></td></tr>
     <tr><td>03:45 PM – 04:15 PM</td><td>Daniar Kasenov (NYU)</td><td><i>SI2DLA and Logical Phonology</i></td></tr>
