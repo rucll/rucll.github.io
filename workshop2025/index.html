@@ -252,15 +252,21 @@ Grant #2416184</a> <br><br><br><br></p></h4>
 <p><span style="color:grey"><i>last update</i>: <span id="last-update"></span></i></span></p>
 
 <script>
-  const now = new Date();
+  // Get the page's last modified time
+  const lastModified = new Date(document.lastModified);
+
+  // Format options (U.S. style, with timezone)
   const options = { 
     year: 'numeric', month: '2-digit', day: '2-digit', 
     hour: '2-digit', minute: '2-digit', second: '2-digit',
-    timeZoneName: 'short' 
+    timeZone: 'America/New_York', timeZoneName: 'short' 
   };
-  document.getElementById('last-update').textContent =
-    now.toLocaleString('en-US', options);
+
+  // Format and display
+  document.getElementById('last-update').textContent = 
+    lastModified.toLocaleString('en-US', options);
 </script>
+
        
 </div>
 <hr />
