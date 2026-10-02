@@ -1,1 +1,480 @@
+<!DOCTYPE html>
 
+<html>
+
+<head>
+
+<meta charset="utf-8" />
+<meta name="generator" content="pandoc" />
+<meta http-equiv="X-UA-Compatible" content="IE=EDGE" />
+
+
+
+
+<title>The 2025 Rutgers Subregular Morphophonology Workshop</title>
+
+<script src="workshop_files/header-attrs-2.29/header-attrs.js"></script>
+<script src="workshop_files/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link href="workshop_files/bootstrap-3.3.5/css/flatly.min.css" rel="stylesheet" />
+<script src="workshop_files/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="workshop_files/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
+<script src="workshop_files/bootstrap-3.3.5/shim/respond.min.js"></script>
+<style>h1 {font-size: 34px;}
+       h1.title {font-size: 38px;}
+       h2 {font-size: 30px;}
+       h3 {font-size: 24px;}
+       h4 {font-size: 18px;}
+       h5 {font-size: 16px;}
+       h6 {font-size: 12px;}
+       code {color: inherit; background-color: rgba(0, 0, 0, 0.04);}
+       pre:not([class]) { background-color: white }</style>
+<script src="workshop_files/jqueryui-1.13.2/jquery-ui.min.js"></script>
+<link href="workshop_files/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="workshop_files/tocify-1.9.1/jquery.tocify.js"></script>
+<script src="workshop_files/navigation-1.1/tabsets.js"></script>
+<link href="workshop_files/highlightjs-9.12.0/default.css" rel="stylesheet" />
+<script src="workshop_files/highlightjs-9.12.0/highlight.js"></script>
+
+<style type="text/css">
+  code{white-space: pre-wrap;}
+  span.smallcaps{font-variant: small-caps;}
+  span.underline{text-decoration: underline;}
+  div.column{display: inline-block; vertical-align: top; width: 50%;}
+  div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+  ul.task-list{list-style: none;}
+    </style>
+
+<style type="text/css">code{white-space: pre;}</style>
+<script type="text/javascript">
+if (window.hljs) {
+  hljs.configure({languages: []});
+  hljs.initHighlightingOnLoad();
+  if (document.readyState && document.readyState === "complete") {
+    window.setTimeout(function() { hljs.initHighlighting(); }, 0);
+  }
+}
+</script>
+
+
+
+
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+
+
+
+<style type = "text/css">
+.main-container {
+  max-width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+}
+img {
+  max-width:100%;
+}
+.tabbed-pane {
+  padding-top: 12px;
+}
+.html-widget {
+  margin-bottom: 20px;
+}
+button.code-folding-btn:focus {
+  outline: none;
+}
+summary {
+  display: list-item;
+}
+details > summary > p:only-child {
+  display: inline;
+}
+pre code {
+  padding: 0;
+}
+</style>
+
+
+
+<!-- tabsets -->
+
+<style type="text/css">
+.tabset-dropdown > .nav-tabs {
+  display: inline-table;
+  max-height: 500px;
+  min-height: 44px;
+  overflow-y: auto;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.tabset-dropdown > .nav-tabs > li.active:before, .tabset-dropdown > .nav-tabs.nav-tabs-open:before {
+  content: "\e259";
+  font-family: 'Glyphicons Halflings';
+  display: inline-block;
+  padding: 10px;
+  border-right: 1px solid #ddd;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li.active:before {
+  content: "\e258";
+  font-family: 'Glyphicons Halflings';
+  border: none;
+}
+
+.tabset-dropdown > .nav-tabs > li.active {
+  display: block;
+}
+
+.tabset-dropdown > .nav-tabs > li > a,
+.tabset-dropdown > .nav-tabs > li > a:focus,
+.tabset-dropdown > .nav-tabs > li > a:hover {
+  border: none;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: transparent;
+}
+
+.tabset-dropdown > .nav-tabs.nav-tabs-open > li {
+  display: block;
+  float: none;
+}
+
+.tabset-dropdown > .nav-tabs > li {
+  display: none;
+}
+</style>
+
+<!-- code folding -->
+
+
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+@media print {
+.toc-content {
+  /* see https://github.com/w3c/csswg-drafts/issues/4434 */
+  float: right;
+}
+}
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+
+
+</head>
+
+<body>
+
+
+<div class="container-fluid main-container">
+
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
+
+
+<div id="header">
+
+
+
+<h1 class="title toc-ignore"><strong>The 2026 Rutgers Subregular
+Morphophonology Workshop</strong></h1>
+<h4 class="author"><p><br><br><br><br><br> Hosted by the <a
+href="https://rucll.github.io">Rutgers Computational Linguistics Lab</a>
+and supported by <a
+href="https://www.nsf.gov/awardsearch/showAward?AWD_ID=2416184">NSF
+Grant #2416184</a> <br><br><br><br></p></h4>
+
+</div>
+
+
+<div style="text-align: right;">
+<p><span style="color:grey"><i>last update</i>: <span id="last-update"></span></i></span></p>
+
+<script>
+  // Get the page's last modified time
+  const lastModified = new Date(document.lastModified);
+
+  // Format options (U.S. style, with timezone)
+  const options = { 
+    year: 'numeric', month: '2-digit', day: '2-digit', 
+    hour: '2-digit', minute: '2-digit', second: '2-digit',
+    timeZone: 'America/New_York', timeZoneName: 'short' 
+  };
+
+  // Format and display
+  document.getElementById('last-update').textContent = 
+    lastModified.toLocaleString('en-US', options);
+</script>
+
+       
+
+</div>
+<hr />
+<div id="date-and-location" class="section level3">
+<h3>Date and location</h3>
+<p>November 6th - 8th, 2026, location TBD</p>
+<hr />
+</div>
+<div id="schedule" class="section level3">
+<h3>Schedule</h3>
+<br>
+<style>
+  .tabs {
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 1em;
+    font-size: 1em;
+    color: #f7f7f7;
+    gap: 1em;
+  }
+  .tab-button {
+    background-color: #777;
+    border: none;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6px;
+    flex: 1 1 0;
+    display: inline-block;
+  }
+  .tab-button.active {
+    background-color: #B3002D;
+  }
+  .tab-content {
+    display: none;
+    animation: fade 0.3s ease-in-out;
+  }
+  .tab-content.active {
+    display: block;
+  }
+  @keyframes fade {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+  }
+  table {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  th, td {
+    padding: 6px;
+    text-align: left;
+  }
+  th[colspan] {
+    background-color: #B3002D;
+    font-size: 1.2em;
+  }
+th:nth-child(1),
+td:nth-child(1) {
+  width: 21%;            /* Time column */
+}
+
+th:nth-child(2),
+td:nth-child(2) {
+  width: 39%;            /* Speaker column */
+}
+
+th:nth-child(3),
+td:nth-child(3) {
+  width: 40%;            /* Title column */
+  word-wrap: break-word; 
+</style>
+
+
+<div class="tabs">
+  <button class="tab-button active" onclick="openDay('day1', this)">Day 1 (Friday, Nov 6)</button>
+  <button class="tab-button" onclick="openDay('day2', this)">Day 2 (Saturday, Nov 7)</button>
+  <button class="tab-button" onclick="openDay('day3', this)">Day 3 (Sunday, Nov 8)</button>
+</div>
+
+<!-- Day 1 -->
+<div id="day1" class="tab-content active">
+  <table>
+    <tr style="color: #f7f7f7"><th colspan="2">afternoon</th><th colspan="1"><i>theme: TBD</i></th></tr>
+  </table>
+</div>
+
+<!-- Day 2 -->
+<div id="day2" class="tab-content">
+  <table>
+  </table>
+</div>
+
+<!-- Day 3 -->
+<div id="day3" class="tab-content">
+  <table>
+  </table>
+</div>
+
+<script>
+  function openDay(dayId, btn) {
+    document.querySelectorAll('.tab-content').forEach(t => t.classList.remove('active'));
+    document.getElementById(dayId).classList.add('active');
+    document.querySelectorAll('.tab-button').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+  }
+</script>
+       
+<script>
+document.addEventListener("scroll", () => {
+  document.querySelectorAll('.reveal').forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight - 80) {
+      el.classList.add('visible');
+    }
+  });
+});
+</script>
+<div id="backToTop">
+▲ Top
+</div>
+<script>
+const btn = document.getElementById('backToTop');
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 300) btn.classList.add("show");
+  else btn.classList.remove("show");
+});
+btn.addEventListener("click", () => window.scrollTo({top:0, behavior:'smooth'}));
+</script>
+</div>
+
+
+
+</div>
+</div>
+
+</div>
+
+<script>
+
+// add bootstrap table styles to pandoc tables
+function bootstrapStylePandocTables() {
+  $('tr.odd').parent('tbody').parent('table').addClass('table table-condensed');
+}
+$(document).ready(function () {
+  bootstrapStylePandocTables();
+});
+
+
+</script>
+
+<!-- tabsets -->
+
+<script>
+$(document).ready(function () {
+  window.buildTabsets("TOC");
+});
+
+$(document).ready(function () {
+  $('.tabset-dropdown > .nav-tabs > li').click(function () {
+    $(this).parent().toggleClass('nav-tabs-open');
+  });
+});
+</script>
+
+<!-- code folding -->
+
+<script>
+$(document).ready(function ()  {
+
+    // temporarily add toc-ignore selector to headers for the consistency with Pandoc
+    $('.unlisted.unnumbered').addClass('toc-ignore')
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_');
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<!-- dynamically load mathjax for compatibility with self-contained -->
+<script>
+  (function () {
+    var script = document.createElement("script");
+    script.type = "text/javascript";
+    script.src  = "https://mathjax.rstudio.com/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML";
+    document.getElementsByTagName("head")[0].appendChild(script);
+  })();
+</script>
+
+</body>
+</html>
