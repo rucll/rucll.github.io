@@ -1,0 +1,291 @@
+/* =========================================================
+   Typography: Nanum Gothic (wider/stronger headings)
+   ========================================================= */
+@import url('https://fonts.googleapis.com/css?family=Lato:300,400&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Raleway:800&display=swap');
+
+html, body {
+  font-family: "Lato", sans-serif !important;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 2;
+  color: #333;
+  background: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Raleway", sans-serif !important;
+  font-weight: 800 !important;
+  letter-spacing: 0.5px;
+}
+
+/* Title block on the page (not the TOC) */
+h1.title { margin-bottom: .2rem; font-size: 2rem; }
+.subtitle, .author, .date { color: #555; margin: .1rem 0; }
+
+/* =========================================================
+   Links (content area): red by default -> grey on hover
+   ========================================================= */
+.toc-content a:link,
+a:link {
+  color: #B3002D !important;
+  text-decoration: none;
+}
+.toc-content a:hover,
+a:hover {
+  color: #777 !important;
+  text-decoration: none;
+}
+.toc-content a:visited,
+a:visited {
+  color: #B3002D !important;
+}
+
+/* =========================================================
+   Floating TOC container
+   ========================================================= */
+#TOC.tocify, div#TOC.tocify {
+  background: #f7f7f7;
+  border-right: 1px solid #e5e5e5;
+  padding: 20px 18px;
+}
+.toc-content {           /* keep main content from sitting under the TOC */
+  padding-left: 24px;
+  max-width: 900px;
+}
+
+/* TOC items: red default -> grey on hover */
+#TOC.tocify .tocify-item > a,
+#TOC.tocify .tocify-item > span {
+  color: #B3002D !important;
+  font-weight: 600;
+  text-decoration: none;
+}
+#TOC.tocify .tocify-item > a:hover,
+#TOC.tocify .tocify-item > span:hover {
+  color: #777 !important;
+  text-decoration: underline;
+}
+
+/* Active section in TOC (optional: keep red or set grey).
+   If you want active to be grey, uncomment the next block. */
+/*
+#TOC.tocify .tocify-focus > a,
+#TOC.tocify .tocify-focus > span {
+  color: #777 !important;
+  font-weight: 700 !important;
+}
+*/
+
+/* =========================================================
+   TOC "banner" (YAML title/subtitle injected into sidebar)
+   - Default grey; turns RED on hover
+   - Kill any nested blue boxes
+   ========================================================= */
+/* Normalize any header/title wrappers used by the template */
+#TOC .tocify-header,
+#TOC .tocify-title,
+#TOC .tocify > .tocify-header,
+#TOC .tocify > .tocify-title {
+  background: #B3002D !important;     /* default grey */
+  color: #fff !important;
+  border: none !important;
+  padding: 12px 14px;
+}
+
+/* Remove inner dark/navy rectangles if they exist */
+#TOC .tocify-header * ,
+#TOC .tocify-title * {
+  background: transparent !important;
+  color: inherit !important;
+  border: none !important;
+}
+
+/* Hover the banner -> RED */
+#TOC .tocify-header:hover,
+#TOC .tocify-title:hover {
+  background: #aaa !important;
+  color: #fff !important;
+}
+
+/* Some Rmd themes render the banner inside .well/.card-header — neutralize them */
+#TOC .well, #TOC .card-header {
+  background-color: transparent !important;
+  color: inherit !important;
+  border: none !important;
+}
+
+/* =========================================================
+   ✨ Interaction & Motion Add-ons (non-destructive)
+   – Paste BELOW your current CSS
+   – Honors prefers-reduced-motion
+   ========================================================= */
+
+/* Smooth scrolling for in-page TOC jumps */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Respect users who prefer reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  * {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* --- 1) Gentle page fade-in on load --- */
+@keyframes fadeInPage { from { opacity: 0 } to { opacity: 1 } }
+body {
+  opacity: 0;
+  animation: fadeInPage 450ms ease-in forwards;
+}
+
+/* --- 2) Smooth link color changes (uses your existing colors) --- */
+a,
+.toc-content a,
+#TOC.tocify .tocify-item > a,
+#TOC.tocify .tocify-item > span {
+  transition: color 200ms ease, transform 200ms ease, text-decoration-color 200ms ease;
+}
+
+/* Subtle slide on TOC item hover (keeps your color rules) */
+#TOC.tocify .tocify-item > a:hover,
+#TOC.tocify .tocify-item > span:hover {
+  transform: translateX(4px);
+}
+
+/* --- 3) Headings highlight when navigated to (#hash targets) --- */
+h1:target, h2:target, h3:target, h4:target, h5:target, h6:target {
+  outline: 0; /* remove default focus ring if any */
+  background-color: rgba(204, 0, 51, 0.08); /* light red wash; doesn't change your text colors */
+  transition: background-color 600ms ease;
+}
+
+/* --- 4) Nicer focus for keyboard navigation (accessibility) --- */
+a:focus-visible,
+button:focus-visible,
+[role="button"]:focus-visible {
+  outline: 3px solid rgba(204, 0, 51, 0.45);
+  outline-offset: 2px;
+  border-radius: 4px;
+  transition: outline-color 200ms ease, outline-offset 200ms ease;
+}
+
+/* --- 5) Images: subtle lift on hover (no color changes) --- */
+.toc-content img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+.toc-content img:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 16px rgba(0,0,0,0.08);
+}
+
+/* --- 6) Code blocks: soft glow on hover (non-intrusive) --- */
+pre, code, pre code {
+  transition: box-shadow 200ms ease, background-color 200ms ease;
+}
+pre:hover, code:hover {
+  box-shadow: inset 0 0 0 1px rgba(0,0,0,0.06), 0 4px 12px rgba(0,0,0,0.06);
+}
+
+/* --- 7) TOC banner hover already turns red in your CSS;
+         make the transition smooth without changing colors --- */
+#TOC .tocify-header,
+#TOC .tocify-title {
+  transition: background-color 200ms ease, color 200ms ease, transform 200ms ease;
+}
+#TOC .tocify-header:hover,
+#TOC .tocify-title:hover {
+  transform: translateY(-1px);
+}
+
+/* Fade-up on scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 600ms ease, transform 600ms ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+#backToTop {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: #B3002D;
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 300ms ease;
+  z-index: 1000;
+}
+#backToTop.show { opacity: 1; }
+#backToTop:hover { background: #777; }
+
+h1, h2, h3 {
+  position: relative;
+}
+h1::after, h2::after, h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 3px;
+  background: #B3002D;
+  transition: width 0.4s ease;
+}
+h1:hover::after, h2:hover::after, h3:hover::after {
+  width: 100%;
+}
+
+blockquote, pre {
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+blockquote:hover, pre:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.1);
+}
+
+::selection {
+  background: #B3002D;
+  color: #fff;
+}
+
+/* Fancy underline for links */
+a {
+  position: relative;
+  color: #B3002D;             /* your default red */
+  text-decoration: none;      /* remove default underline */
+}
+
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -2px;               /* just below the text */
+  width: 100%;
+  height: 2px;
+  background: currentColor;   /* matches text color */
+  transform: scaleX(0);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: left;
+}
+
+a:hover::after {
+  transform: scaleX(1);
+  opacity: 1;
+}
